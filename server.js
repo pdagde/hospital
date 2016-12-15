@@ -11,10 +11,10 @@ app.use(bodyParser.json());
 
 app.get('/patient',function(req,res){
     console.log('i recieved get request');
-   /* db.patient.find(function(err,docs){
+    db.patient.find(function(err,docs){
         console.log('docs' +JSON.stringify(docs));
         res.json(docs)
-    })*/
+    })
 });
 
 app.post('/patient',function(req,res){
